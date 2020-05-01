@@ -812,7 +812,7 @@ def print_enum(prefix, en_names, jp_names):
 	jp_names = list(map(repr, jp_names))
 	max_len = max(map(len, en_names))
 	for e, j in zip(en_names, jp_names):
-		print('%s(%s, %s),' % (prefix, e.ljust(max_len), j))
+		print('%s(%s),' % (prefix, e))
 
 if __name__ == '__main__':
 	print('from bcsv import *')
